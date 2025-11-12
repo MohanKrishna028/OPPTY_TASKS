@@ -1,0 +1,148 @@
+body{
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffcccc, #ff6666);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  background: white;
+  width: 80%;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.title {
+  text-align: center;
+  color: darkred;
+  text-shadow: 2px 2px 4px pink;
+}
+
+
+.selectors {
+  margin-top: 20px;
+  background-color: #ffe4e1;
+  padding: 15px;
+  border-radius: 5px;
+}
+.Class {
+  color: blue;
+  font-weight: bold;
+}
+#unique {
+  color: green;
+  font-style: italic;
+}
+
+
+.colors {
+  margin-top: 20px;
+  background-color: #e7ffe1;
+  padding: 15px;
+  border-radius: 5px;
+}
+#red {
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: red;
+}
+#rgb{
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: rgb(0, 200, 100);
+}
+#hex {
+  width: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: #6A5ACD; 
+
+  }
+
+
+.backgrounds {
+  margin-top: 20px;
+  background-color: #e1fffe;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.solid {
+  padding: 15px;
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  background-color: teal;
+}
+.gradient {
+  padding: 15px;
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  background: linear-gradient(to right, purple, violet);
+}
+.image {
+  padding: 15px;
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQk8R5j0_NazbF0KkD7CkooQodlbgy5Apfw&s');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.borders {
+  margin-top: 20px;
+  background-color: #f5e1ff;
+  padding: 15px;
+  border-radius: 5px;
+}
+.dotted{
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 3px dotted red;
+}
+.dashed {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 3px dashed blue;
+}
+.double {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 5px double green;
+}
+.rounded {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 3px solid purple;
+  border-radius: 15px;
+}
