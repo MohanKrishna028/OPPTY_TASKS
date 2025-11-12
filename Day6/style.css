@@ -23,7 +23,7 @@ body::after {
   height: 11vh;
   background-color: white;
   transform: skewY(-2deg); 
-  transform-origin: top left;
+
   
 }
 
