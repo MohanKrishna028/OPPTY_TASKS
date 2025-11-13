@@ -2,8 +2,7 @@ body{
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #ffcccc, #ff6666);
-  /* background-image: url(https://blog.stackfindover.com/wp-content/uploads/2021/10/wave-background-animation.gif);
-  background-repeat: no-repeat; */
+  
   display: flex;
   justify-content: center;
 }
