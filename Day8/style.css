@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f1f2f6, #dfe6e9);
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #03c8ff;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 2.3em;
+  margin-bottom: 10px;
+}
+
+
+
+/* Navbar */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  background: #0984e3;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  background: #74b9ff;
+}
+
+/* Section */
+.content-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Topic buttons */
+.topic-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.topic-buttons a {
+  background: #6c5ce7;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.topic-buttons a:hover {
+  background: #a29bfe;
+}
+
+/* Containers */
+.topic-container {
+  background: white;
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.topic-container h3 {
+  color: #2d3436;
+  margin-bottom: 15px;
+}
+
+.code {
+  background: #f1f2f6;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: monospace;
+  margin: 15px 0;
+}
+
+/* Navigation buttons inside topics */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.btn {
+  background: #0984e3;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #74b9ff;
+}
+.home-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.home-button .btn.home {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.home-button .btn.home:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}

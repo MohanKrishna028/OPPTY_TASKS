@@ -1,0 +1,405 @@
+Gmail	Mohan Krishna Koramutla <mohankrishnakoramutla@gmail.com>
+(no subject)
+Mohan Krishna Koramutla <mohankrishnakoramutla@gmail.com>	Fri, Nov 14, 2025 at 10:40 AM
+To: Mohan Krishna Koramutla <mohankrishnakoramutla@gmail.com>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+  <!-- Header -->
+  <header>
+    <h1>Web Development</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#html-section">HTML</a></li>
+        <li><a href="#css-section">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HTML Section -->
+
+  <section class="content-section">
+    <h2>HTML Development</h2>
+
+    <!-- Topic Navigation -->
+    <div class="topic-buttons">
+      <a href="#intro">Introduction</a>
+      <a href="#elements">Elements</a>
+      <a href="#attributes">Attributes</a>
+      <a href="#forms">Forms</a>
+      <a href="#media">Media</a>
+      <a href="#semantics">Semantics</a>
+    </div>
+
+    <!-- 1️⃣ INTRODUCTION -->
+    <div id="intro" class="topic-container">
+      <h3>Introduction to HTML</h3>
+      <p>HTML, or <strong>HyperText Markup Language</strong>, is the foundation of all web pages. It defines the
+        structure and content of a webpage using tags and elements. Every web browser reads HTML and displays it in a
+        human-readable format.</p>
+
+      <h4>Key Features of HTML</h4>
+      <ul>
+        <li>It is a <strong>markup language</strong> — not a programming language.</li>
+        <li>Uses tags enclosed in angle brackets (<code>&lt; &gt;</code>).</li>
+        <li>Supports multimedia like images, audio, and video.</li>
+        <li>Is platform-independent and works on all browsers.</li>
+      </ul>
+
+      <h4>Structure of an HTML Page</h4>
+      <p class="code">&lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;title&gt;My First Page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;Welcome to Web Development&lt;/h1&gt;
+        &lt;p&gt;HTML is the backbone of the web!&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </p>
+
+      <h4>How HTML Works</h4>
+      <p>When a browser loads an HTML file, it reads the markup from top to bottom and converts it into a
+        <strong>Document Object Model (DOM)</strong>. CSS and JavaScript can then modify how this structure looks and
+        behaves.
+      </p>
+
+      <div class="nav-buttons">
+        <a href="#html-section" class="btn">↑ Back to Top</a>
+        <a href="#elements" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 2️⃣ ELEMENTS -->
+    <div id="elements" class="topic-container">
+      <h3>HTML Elements</h3>
+      <p>HTML elements are the building blocks of web pages. They represent parts of the document such as headings,
+        paragraphs, images, and links. Each element generally has an opening tag, content, and a closing tag.</p>
+
+      <h4>Common Elements</h4>
+      <ul>
+        <li><code>&lt;h1&gt;–&lt;h6&gt;</code>: Headings from largest to smallest.</li>
+        <li><code>&lt;p&gt;</code>: Paragraph of text.</li>
+        <li><code>&lt;a&gt;</code>: Anchor element for hyperlinks.</li>
+        <li><code>&lt;img&gt;</code>: Image element (self-closing).</li>
+        <li><code>&lt;div&gt;</code>: Container for grouping elements.</li>
+        <li><code>&lt;span&gt;</code>: Inline container for styling text.</li>
+      </ul>
+
+      <h4>Example</h4>
+      <p class="code">&lt;div&gt;
+        &lt;h2&gt;My Favorite Quote&lt;/h2&gt;
+        &lt;p&gt;"The best way to get started is to quit talking and begin doing."&lt;/p&gt;
+        &lt;a href="https://example.com"&gt;Learn more&lt;/a&gt;
+        &lt;/div&gt;
+      </p>
+
+      <p>Elements can also be <strong>nested</strong>, meaning you can place one element inside another. This helps
+        organize your HTML structure efficiently.</p>
+
+      <h4>Block vs Inline Elements</h4>
+      <ul>
+        <li><strong>Block elements</strong> start on a new line (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>,
+          <code>&lt;h1&gt;</code>).
+        </li>
+        <li><strong>Inline elements</strong> stay within the same line (e.g., <code>&lt;span&gt;</code>,
+          <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>).
+        </li>
+      </ul>
+
+      <div class="nav-buttons">
+        <a href="#intro" class="btn prev">← Previous Topic</a>
+        <a href="#attributes" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 3️⃣ ATTRIBUTES -->
+    <div id="attributes" class="topic-container">
+      <h3>HTML Attributes</h3>
+      <p>Attributes provide additional information about HTML elements. They always appear inside the opening tag and
+        consist of a <strong>name/value</strong> pair like <code>name="value"</code>.</p>
+
+      <h4>Common Attributes</h4>
+      <ul>
+        <li><code>href</code> — Defines the destination of a hyperlink.</li>
+        <li><code>src</code> — Specifies the source of an image, video, or audio file.</li>
+        <li><code>alt</code> — Provides alternative text for an image.</li>
+        <li><code>id</code> — Gives a unique identifier to an element.</li>
+        <li><code>class</code> — Assigns one or more class names for styling.</li>
+        <li><code>title</code> — Displays extra info when hovering over the element.</li>
+      </ul>
+
+      <p class="code">&lt;a href="https://www.wikipedia.org" title="Visit Wikipedia"&gt;Wikipedia&lt;/a&gt;
+        &lt;img src="flower.jpg" alt="A beautiful flower" width="300"&gt;
+      </p>
+
+      <h4>Global Attributes</h4>
+      <p>These attributes can be used on any HTML element:</p>
+      <ul>
+        <li><code>style</code> — Adds inline CSS styles.</li>
+        <li><code>hidden</code> — Hides the element from view.</li>
+        <li><code>tabindex</code> — Specifies the tab order for keyboard navigation.</li>
+        <li><code>contenteditable</code> — Makes text editable directly in the browser.</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <a href="#elements" class="btn prev">← Previous Topic</a>
+        <a href="#forms" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 4️⃣ FORMS -->
+    <div id="forms" class="topic-container">
+      <h3>HTML Forms</h3>
+      <p>Forms are used to collect user input. They can include text fields, checkboxes, radio buttons, dropdowns, and
+        submit buttons.</p>
+
+      <h4>Example</h4>
+      <p class="code">&lt;form action="/submit" method="post"&gt;
+        &lt;label&gt;Name:&lt;/label&gt;
+        &lt;input type="text" name="name" required&gt;&lt;br&gt;&lt;br&gt;
+        &lt;label&gt;Email:&lt;/label&gt;
+        &lt;input type="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+        &lt;label&gt;Gender:&lt;/label&gt;
+        &lt;input type="radio" name="gender" value="male"&gt; Male
+        &lt;input type="radio" name="gender" value="female"&gt; Female&lt;br&gt;&lt;br&gt;
+        &lt;input type="submit" value="Submit"&gt;
+        &lt;/form&gt;
+      </p>
+
+      <h4>Common Input Types</h4>
+      <ul>
+        <li><code>text</code>, <code>password</code>, <code>email</code></li>
+        <li><code>checkbox</code>, <code>radio</code>, <code>range</code></li>
+        <li><code>date</code>, <code>file</code>, <code>color</code></li>
+        <li><code>submit</code>, <code>reset</code>, <code>button</code></li>
+      </ul>
+
+      <h4>HTML5 Form Enhancements</h4>
+      <ul>
+        <li><code>required</code> — Ensures the field must be filled before submission.</li>
+        <li><code>placeholder</code> — Displays hint text inside inputs.</li>
+        <li><code>pattern</code> — Allows input validation with regex.</li>
+      </ul>
+
+      <div class="nav-buttons">
+        <a href="#attributes" class="btn prev">← Previous Topic</a>
+        <a href="#media" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 5️⃣ MEDIA -->
+    <div id="media" class="topic-container">
+      <h3>HTML Media</h3>
+      <p>Media elements like images, audio, and video make web pages visually appealing and interactive. HTML5
+        introduced powerful tags for embedding multimedia content.</p>
+
+      <h4>Examples</h4>
+      <p class="code">&lt;img src="nature.jpg" alt="Nature" width="400"&gt;
+        &lt;audio controls&gt;
+        &lt;source src="song.mp3" type="audio/mpeg"&gt;
+        Your browser does not support the audio tag.
+        &lt;/audio&gt;
+
+        &lt;video width="480" controls&gt;
+        &lt;source src="sample.mp4" type="video/mp4"&gt;
+        Your browser does not support the video tag.
+        &lt;/video&gt;
+      </p>
+
+      <p>HTML5 supports attributes like <code>autoplay</code>, <code>loop</code>, and <code>muted</code> for controlling
+        media behavior. It also allows adding captions through <code>&lt;track&gt;</code> elements for accessibility.
+      </p>
+
+      <div class="nav-buttons">
+        <a href="#forms" class="btn prev">← Previous Topic</a>
+        <a href="#semantics" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 6️⃣ SEMANTICS -->
+    <div id="semantics" class="topic-container">
+      <h3>HTML Semantics</h3>
+      <p>Semantic HTML gives meaning to content, helping browsers, developers, and search engines understand its
+        purpose. It improves SEO and accessibility for screen readers.</p>
+
+      <h4>Common Semantic Tags</h4>
+      <ul>
+        <li><code>&lt;header&gt;</code> — Defines the top section or heading.</li>
+        <li><code>&lt;nav&gt;</code> — Contains navigation links.</li>
+        <li><code>&lt;article&gt;</code> — Represents self-contained content like blog posts.</li>
+        <li><code>&lt;section&gt;</code> — Groups related content.</li>
+        <li><code>&lt;aside&gt;</code> — Sidebar content or ads.</li>
+        <li><code>&lt;footer&gt;</code> — Defines footer section.</li>
+      </ul>
+
+      <p class="code">&lt;header&gt;
+        &lt;h1&gt;My Blog&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;article&gt;
+        &lt;h2&gt;First Post&lt;/h2&gt;
+        &lt;p&gt;This is my first blog post using semantic HTML.&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;footer&gt;© 2025 My Blog&lt;/footer&gt;
+      </p>
+
+      <p>Using semantic elements makes your HTML cleaner and more descriptive. It’s considered a best practice in modern
+        web development.</p>
+
+      <div class="nav-buttons">
+        <a href="#media" class="btn prev">← Previous Topic</a>
+        <a href="#html-section" class="btn">↑ Back to Top</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="home-button">
+    <a href="#top" class="btn home">Back to Home</a>
+  </div>
+
+
+  
+     <!-- CSS SECTION -->
+
+  <section id="css-section" class="content-section">
+    <h2>CSS Development</h2>
+
+    <div class="topic-buttons">
+      <a href="#selectors">Selectors</a>
+      <a href="#colors">Colors</a>
+      <a href="#backgrounds">Backgrounds</a>
+      <a href="#borders">Borders</a>
+      <a href="#boxmodel">Box Model</a>
+      <a href="#shadows">Shadows</a>
+    </div>
+
+    <!-- 1️⃣ CSS Selectors -->
+    <div id="selectors" class="topic-container">
+      <h3>1. CSS Selectors</h3>
+      <p>CSS selectors define which HTML elements your styles will apply to. They are the foundation of CSS design.</p>
+      <ul>
+        <li><strong>Universal Selector:</strong> <code>* { margin: 0; padding: 0; }</code></li>
+        <li><strong>Type Selector:</strong> <code>p { color: blue; }</code></li>
+        <li><strong>Class Selector:</strong> <code>.box { background: yellow; }</code></li>
+        <li><strong>ID Selector:</strong> <code>#main { border: 2px solid red; }</code></li>
+        <li><strong>Attribute Selector:</strong> <code>input[type="text"] { border-radius: 5px; }</code></li>
+      </ul>
+      <p>Selectors can be combined for complex targeting. For example, <code>div p</code> applies styles to paragraphs
+        inside divs only.</p>
+      <div class="nav-buttons">
+        <a href="#css-section" class="btn">↑ Back to Top</a>
+        <a href="#colors" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 2️⃣ CSS Colors -->
+    <div id="colors" class="topic-container">
+      <h3>2. CSS Colors</h3>
+      <p>CSS allows you to apply colors using names, HEX, RGB, RGBA, or HSL values.</p>
+      <ul>
+        <li><strong>Named Color:</strong> <code>color: red;</code></li>
+        <li><strong>HEX Value:</strong> <code>color: #ff0000;</code></li>
+        <li><strong>RGB:</strong> <code>color: rgb(255,0,0);</code></li>
+        <li><strong>RGBA (with transparency):</strong> <code>color: rgba(255,0,0,0.5);</code></li>
+        <li><strong>HSL:</strong> <code>color: hsl(0, 100%, 50%);</code></li>
+      </ul>
+      <p>Colors are not limited to text; you can color borders, backgrounds, and shadows as well.</p>
+      <div class="nav-buttons">
+        <a href="#selectors" class="btn prev">← Previous Topic</a>
+        <a href="#backgrounds" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 3️⃣ CSS Backgrounds -->
+    <div id="backgrounds" class="topic-container">
+      <h3>3. CSS Backgrounds</h3>
+      <p>Backgrounds enhance the visual appeal of web pages by applying colors, gradients, or images.</p>
+      <p>Examples:</p>
+      <ul>
+        <li><code>background-color: lightblue;</code></li>
+        <li><code>background-image: url('bg.jpg');</code></li>
+        <li><code>background-repeat: no-repeat;</code></li>
+        <li><code>background-size: cover;</code></li>
+        <li><code>background-position: center;</code></li>
+      </ul>
+      <p>CSS gradients allow smooth transitions between colors using <code>linear-gradient()</code> or
+        <code>radial-gradient()</code>.</p>
+      <div class="nav-buttons">
+        <a href="#colors" class="btn prev">← Previous Topic</a>
+        <a href="#borders" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 4️⃣ CSS Borders -->
+    <div id="borders" class="topic-container">
+      <h3>4. CSS Borders</h3>
+      <p>Borders help visually separate or highlight elements.</p>
+      <p>Examples:</p>
+      <ul>
+        <li><code>border: 2px solid black;</code></li>
+        <li><code>border-radius: 10px;</code></li>
+        <li><code>border-style: dotted dashed solid double;</code></li>
+      </ul>
+      <p>Rounded borders give a modern, soft look to containers.</p>
+      <div class="nav-buttons">
+        <a href="#backgrounds" class="btn prev">← Previous Topic</a>
+        <a href="#boxmodel" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 5️⃣ CSS Box Model -->
+    <div id="boxmodel" class="topic-container">
+      <h3>5. CSS Box Model</h3>
+      <p>The box model explains how every element is a rectangular box with four layers: <strong>content</strong>,
+        <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>.</p>
+      <p class="code">div {
+        width: 200px;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 15px;
+        }</p>
+      <p>Understanding the box model helps fix layout issues and design responsive pages.</p>
+      <div class="nav-buttons">
+        <a href="#borders" class="btn prev">← Previous Topic</a>
+        <a href="#shadows" class="btn next">Next Topic →</a>
+      </div>
+    </div>
+
+    <!-- 6️⃣ CSS Shadows -->
+    <div id="shadows" class="topic-container">
+      <h3>6. CSS Shadows</h3>
+      <p>Shadows add depth and realism to designs. CSS supports both text and box shadows.</p>
+      <p>Examples:</p>
+      <ul>
+        <li><strong>Box Shadow:</strong> <code>box-shadow: 4px 4px 15px rgba(0,0,0,0.3);</code></li>
+        <li><strong>Text Shadow:</strong> <code>text-shadow: 2px 2px 5px gray;</code></li>
+      </ul>
+      <p>Shadows can create soft glowing effects, 3D designs, or floating element visuals.</p>
+      <div class="nav-buttons">
+        <a href="#boxmodel" class="btn prev">← Previous Topic</a>
+        <a href="#css-section" class="btn">↑ Back to Top</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="home-button">
+    <a href="#top" class="btn home">Back to Home</a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Web Development Project</p>
+  </footer>
+</body>
+
+</html>
