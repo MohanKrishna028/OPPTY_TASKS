@@ -2,10 +2,9 @@ body{
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #ffcccc, #ff6666);
+  
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 .main {
@@ -76,6 +75,7 @@ body{
   }
 
 
+  
 .backgrounds {
   margin-top: 20px;
   background-color: #e1fffe;
@@ -107,7 +107,6 @@ body{
   border-radius: 6px;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQk8R5j0_NazbF0KkD7CkooQodlbgy5Apfw&s');
   background-size: cover;
-  background-position: center;
 }
 
 
