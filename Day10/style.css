@@ -87,7 +87,7 @@ nav ul li a {
 /* PROGRAMS SECTION */
 .programs-section {
     background: #afa8a8;
-    padding: 50px 0;
+    padding: 50px ;
     text-align: center;
 }
 
@@ -164,7 +164,7 @@ nav ul li a {
 }
 
 .student-box {
-    width: 370px;
+    width: 350px;
     height: 250px;
     background: #ec4899;
     border-radius: 12px;
@@ -198,12 +198,11 @@ nav ul li a {
 }
 
 .campus-text ul li::before {
-    content: "✔ ";
+    content: "✔";
     color: #10b981;
     font-weight: bold;
 }
 
-/* FOOTER */
 footer {
     background: #1e3a8a;
     color: white;
