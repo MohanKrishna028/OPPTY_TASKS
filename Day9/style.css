@@ -19,7 +19,7 @@ header {
   color: #00eaff;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s ease; /* smooth animation */
+  transition: 0.3s ease;
 }
 
 .navbar a:hover {
@@ -27,7 +27,7 @@ header {
   transform: scale(1.1)
 }
 
-/* HOME */
+
 .new-hero {
   display: flex;
   gap: 30px;
@@ -107,8 +107,9 @@ header {
   margin: 10px;
 }
 
-/* SERVICES */
-/* Service Page Styling */
+
+
+
 .services {
     padding: 60px 5%;
     background: linear-gradient(135deg, #ffefd5, #c3e5ff);
@@ -163,12 +164,13 @@ header {
     padding-bottom: 5px;
 }
 
-/* Zig-zag layout */
+
+
 .reverse {
     flex-direction: row-reverse;
 }
 
-/* CONTACT */
+
 .contact-hero {
     background: linear-gradient(45deg, #0078ff, #00c6ff);
     color: #fff;
