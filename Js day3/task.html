@@ -122,7 +122,7 @@
             ]
         };
 
-        student.total = m1+m2+m3+m4+m5;
+        student.total = student.marks.reduce((a, b) => a + b, 0);
         student.average = student.total / 5;
 
         if (student.average >= 90) student.grade = "A+";
