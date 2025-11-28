@@ -118,11 +118,11 @@
                 Number(m2),
                 Number(m3),
                 Number(m4),
-                Number(m5)
+                Number(m5),
             ]
         };
 
-        student.total = student.marks.reduce((a, b) => a + b, 0);
+        student.total = m1+m2+m3+m4+m5;
         student.average = student.total / 5;
 
         if (student.average >= 90) student.grade = "A+";
