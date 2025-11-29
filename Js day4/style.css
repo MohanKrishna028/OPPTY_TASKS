@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1a004a;
+    color: #fff;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.header nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffffc7;
+}
+
+.trade-btn {
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #ff2471;
+    color: #ff2471;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 25px 0;
+    opacity: 0.85;
+}
+
+.whitelist-btn {
+    background: #ff5e57;
+    padding: 16px 40px;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero-img img {
+    width: 450px;
+}
+
+
+
+/* Table Section */
+.crypto-prices {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.crypto-prices h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+
+thead tr {
+    border-bottom: 2px solid #ffffff44;
+    border-top: 2px solid #ffffff44;
+    line-height: 40px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ffffff33;
+    height: 80px;
+}
+
+td img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+
+.graph {
+    width: 100px;
+    margin-right: 10px;
+}
+
+td span {
+    font-size: 12px;
+    opacity: 0.7;
+    padding-left: 5px;
+}
+
+.up {
+    color: #00ff76;
+}
+
+.down {
+    color: #ff3a3a;
+}
+
+td p{
+    color: #7d7d7d;
+    margin-left: 70px;
+    margin-top: 5px;
+    font-size: 13px;
+    
+}
+
+/* Trusted Crypto Section */
+.trusted-section {
+    width: 100%;
+    text-align: center;
+    background: #f7efff;
+    color: #000;
+    padding: 80px 0;
+    margin-top: 80px;
+}
+
+.trusted-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.trusted-box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.trust-card:hover{
+     transform: translateY(-10px);
+}
+
+
+.trust-card {
+    width: 280px;
+    text-align: left;
+}
+
+.trust-card img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.trust-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.trust-card p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #3a3a3a;
+    line-height: 30px;
+    font-size: 90%;
+}
+
+
+/* App Section */
+.app-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background: #1b0050;
+    color: white;
+}
+
+.app-text {
+    width: 45%;
+}
+
+.app-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.app-text p {
+    margin: 25px 0;
+    font-size: 17px;
+    color: #d9d9d9;
+    line-height: 26px;
+}
+
+.store-btns img {
+    width: 140px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.store-btns img:hover {
+    transform: scale(1.08);
+}
+
+/* Phones */
+.app-images {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone {
+    width: 230px;
+    filter: drop-shadow(0px 0px 30px #000);
+    position: absolute;
+    transform: rotate(10deg);
+}
+
+/* Blog Section */
+.blog-section {
+    background: #f9eefb;
+    text-align: center;
+    padding: 80px 100px;
+}
+
+.blog-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.blog-card {
+    width: 32%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 18px 20px;
+    text-align: left;
+}
+
+.blog-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000 ;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.blog-content p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #444;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #0d0041; /* dark purple */
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    font-size: 18px;
+    color: #ccccff;
+    margin-bottom: 40px;
+}
+
+.newsletter-box {
+    width: 55%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-box input {
+    padding: 18px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.newsletter-box input::placeholder {
+    color: #d2d2ff;
+}
+
+.newsletter-box button {
+    background: linear-gradient(90deg, #ff7c7c, #ff6161);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+    transform: scale(1.07);
+}
+
+
+/* Footer */
+.footer-section {
+    background: linear-gradient(90deg, #2d0066, #350152);
+    padding: 60px 10%;
+    color: #fff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-col a {
+    display: block;
+    color: #d3caff;
+    font-size: 15px;
+    margin: 8px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.footer-line {
+    margin: 40px 0 25px;
+    border: none;
+    border-top: 1px solid #6b559b;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: #b8b3d1;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    color: #000;
+    position: relative;
+    
+    
+}
+.social-icons a img {
+    width: 35px;  
+    height: 35px;
+}
+
+
+
+.social-icons a img:hover {
+    background: #ff6d6d;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
