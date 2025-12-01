@@ -458,3 +458,186 @@ td p{
     border-radius: 5px;
 }
 
+
+
+
+@media (max-width: 768px) {
+
+    /* General */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .trade-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .hero-img img {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    /* Crypto Table */
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        padding: 10px;
+        background: #22005f;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+    }
+
+    tbody td img {
+        width: 30px;
+    }
+
+    .graph {
+        width: 70px;
+    }
+
+    /* Trusted Section */
+    .trusted-section {
+        padding: 50px 20px;
+    }
+
+    .trusted-box {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .trust-card {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* App Section */
+    .app-section {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .app-text {
+        width: 100%;
+    }
+
+    .app-text h1 {
+        font-size: 32px;
+    }
+
+    .app-images {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .phone {
+        width: 250px;
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    /* Blog Section */
+    .blog-section {
+        padding: 50px 20px;
+    }
+
+    .blog-cards {
+        flex-direction: column;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+
+    /* Newsletter */
+    .newsletter-box {
+        width: 100%;
+        height: 50%;
+    }
+    .newsletter-box input::placeholder {
+        font-size: 12px;
+    }
+    .newsletter-box button {
+    background: linear-gradient(90deg, #ff7c7c, #ff6161);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    margin-left: -90px;
+}
+
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+}
