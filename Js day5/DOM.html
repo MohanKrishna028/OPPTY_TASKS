@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Example</title>
+    <style>
+        .info {
+            font-size: 18px;
+            color: purple;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Welcome to DOM Example</h1>
+
+    <p class="info">This text will change using DOM.</p>
+    <p class="info">DOM stands for Document Object Model.</p>
+
+    <button onclick="updatepage()">Click to Update Page</button>
+
+    <script>
+      
+        const title = document.getElementById("title");
+        const infoText = document.getElementsByClassName("info");
+        const paragraphs = document.getElementsByTagName("p");
+
+        
+        function updatepage() {
+
+            
+            document.body.style.backgroundColor = "lightpink";
+
+            
+            title.textContent = "DOM Manipulation Successful!";
+            title.style.color = "blue";
+            title.style.fontSize = "30px";
+            title.style.backgroundColor = "white";
+
+            
+            infoText[0].textContent = "Updated using getElementsByClassName()!";
+            infoText[0].style.color = "black";
+            infoText[1].style.color = "green";
+
+           
+            paragraphs[0].classList.add("highlight");
+        }
+    </script>
+
+</body>
+</html>

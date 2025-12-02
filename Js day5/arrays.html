@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Concepts </title>
+</head>
+
+<body>
+    <h1>Array concepts</h1>
+    <p id="demo"></p><br>
+
+    <h2>Array Methods</h2>
+    <p>1.The length property returns the length of an array:</p>
+    <p id="demo1"></p><br>
+
+    <p>2.The toString() method returns the elements of an array as a comma separated string:</p>
+    <p id="demo2"></p><br>
+
+    <p>3.The at() method returns an indexed element from an array:</p>
+    <p id="demo3"></p><br>
+
+    <p>4.The join() method joins array elements into a string.</p>
+    <p>It this example we have used " * " as a separator between the elements:</p>
+    <p id="demo4"></p><br>
+
+    <p>5.The pop() method removes the last element from an array.</p>
+    <p id="demo5"></p><br>
+
+    <p>The push() method appends a new element to an array:</p>
+    <p id="demo6"></p><br>
+
+    <p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+    <p id="demo7"></p><br>
+
+    <p>The unshift() method adds new elements to the beginning of an array:</p>
+    <p id="demo8"></p><br>
+
+    <p>The concat() method merges (concatenates) arrays:</p>
+    <p id="demo9"></p><br>
+
+    <p>copyWithin() copies array elements to another position in an array, overwriting existing values:</p>
+    <p>Copy to index 2, all elements from index 0:</p>
+    <p id="demo10"></p><br>
+
+    <p>The slice() Method slice out a part of an array starting from array element 1:</p>
+    <p id="demo11"></p><br>
+
+    <p>The splice() method adds new elements to an array:</p>
+    <p id="demo12"></p><br>
+
+    <p>The toSpliced() Method</p>
+    <p id="demo13"></p><br>
+
+    <h2>Array Searching</h2>
+
+    <p>The indexOf() Method</p>
+    <p id="demo14"></p><br>
+
+    <p>he lastIndexOf() Method</p>
+    <p id="demo15"></p>
+
+
+</body>
+<script>
+    const names = ["Mohan", "Rajesh", "Abhi", "Chandra"];
+    document.getElementById("demo").innerHTML = names;
+
+
+    let size = names.length;
+    document.getElementById("demo1").innerHTML = size;
+
+
+    let myList = names.toString();
+    document.getElementById("demo2").innerHTML = myList;
+
+    let name = names.at(2);
+    document.getElementById("demo3").innerHTML = name;
+
+    document.getElementById("demo4").innerHTML = names.join(" * ");
+
+    names.pop();
+    document.getElementById("demo5").innerHTML = names;
+
+    names.push("Raju");
+    document.getElementById("demo6").innerHTML = names;
+
+    names.shift();
+    document.getElementById("demo7").innerHTML = names;
+
+    names.unshift("Madhu");
+    document.getElementById("demo8").innerHTML = names;
+
+    const girls = ["Dolly", "Priya"];
+    const tnames = girls.concat(names);
+    document.getElementById("demo9").innerHTML = tnames;
+
+    document.getElementById("demo10").innerHTML = names.copyWithin(2,0);
+
+    const nnames = names.slice(1);
+    document.getElementById("demo11").innerHTML = nnames;
+
+    names.splice(1, 0, "Mani", "Mohan");
+    document.getElementById("demo12").innerHTML = names;
+
+    const spliced = names.toSpliced(0, 2);
+    document.getElementById("demo13").innerHTML = spliced;
+
+
+
+    const bikes = ["Hero", "Royal Enfield", "Yamaha", "Bajaj","Hero"];
+    let position = bikes.indexOf("Yamaha");
+    document.getElementById("demo14").innerHTML = "Yamaha is found in position " + position;
+
+    let position1 = bikes.lastIndexOf("Hero") ;
+    document.getElementById("demo15").innerHTML = "Hero is found in position " + position1;
+
+</script>
+
+
+</script>
+
+</html>
