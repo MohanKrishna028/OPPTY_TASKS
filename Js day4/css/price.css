@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0e13;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+.header h2{
+    color: white;
+}
+
+.header nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffffc7;
+}
+
+.trade-btn {
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #ff2471;
+    color: #ff2471;
+    border-radius: 20px;
+}
+
+.crypto-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff; 
+}
+
+
+.crypto-left {
+    width: 55%;
+    
+}
+
+.crypto-left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.crypto-left p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #e0dcd3;
+}
+
+
+
+
+.crypto-right h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.store-btn {
+    display: block;
+    width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    
+}
+
+.crypto-prices {
+    text-align: center;
+}
+
+.crypto-prices h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+
+thead tr {
+    border-bottom: 2px solid #ffffff44;
+    border-top: 2px solid #ffffff44;
+    line-height: 40px;
+    color: white;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ffffff33;
+    height: 80px;
+    color: white;
+}
+
+td img {
+    width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+
+.graph {
+    width: 100px;
+    margin-right: 10px;
+}
+
+td span {
+    font-size: 12px;
+    opacity: 0.7;
+    padding-left: 5px;
+}
+
+.up {
+    color: #00ff76;
+}
+
+.down {
+    color: #ff3a3a;
+}
+
+td p{
+    color: #7d7d7d;
+    margin-left: 70px;
+    margin-top: 5px;
+    font-size: 13px;
+    
+}
+
+.footer-section {
+    
+    padding: 60px 10%;
+    color: #fff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-col a {
+    display: block;
+    color: #d3caff;
+    font-size: 15px;
+    margin: 8px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.footer-line {
+    margin: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: #b8b3d1;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    color: #000;
+    position: relative;
+    
+    
+}
+.social-icons a img {
+    width: 35px;  
+    height: 35px;
+}
+
+
+
+.social-icons a img:hover {
+    background: #ff6d6d;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
