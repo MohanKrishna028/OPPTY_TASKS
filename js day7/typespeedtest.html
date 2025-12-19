@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Typing Speed Test (2 min / 3 min)</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1f4037, #99f2c8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        width: 700px;
+        background: #0b0b0b;
+        color: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .time-select {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .timer {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #00ffcc;
+    }
+
+    .test-text {
+        background: #000;
+        padding: 15px;
+        border-radius: 6px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        resize: none;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    button {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .submit {
+        background: #00ffcc;
+    }
+
+    .reset {
+        background: #ff4d4d;
+        color: white;
+    }
+
+    .result {
+        margin-top: 15px;
+        background: #000;
+        padding: 12px;
+        border-radius: 6px;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Typing Speed Test</h2>
+
+    <div class="time-select">
+        <label>
+            <input type="radio" name="time" value="120" checked>
+            2 Minutes
+        </label>
+        <label>
+            <input type="radio" name="time" value="180">
+            3 Minutes
+        </label>
+    </div>
+
+    <div class="timer">
+        Time Left: <span id="time">120</span> s
+    </div>
+
+    <div class="test-text" id="testText"></div>
+
+    <textarea id="userInput" placeholder="Start typing here..."></textarea>
+
+    <div class="buttons">
+        <button class="submit" onclick="submitTest()">Submit</button>
+        <button class="reset" onclick="resetTest()">Reset</button>
+    </div>
+
+    <div class="result" id="resultBox">
+        <p>WPM: <span id="wpm"></span></p>
+        <p>Accuracy: <span id="accuracy"></span>%</p>
+        <p>Errors: <span id="errors"></span></p>
+        <p>Time Used: <span id="timeUsed"></span> sec</p>
+    </div>
+</div>
+
+<script>
+    var passages = {
+        120: "Festivals are integral to Hindu culture, celebrating brotherhood, sharing, and community. " +
+        "A prominent festival is Diwali, observed by Hindus to mark the return of Lord Rama to Ayodhya " +
+        "after defeating the demon king Ravana. It symbolises the victory of light over darkness and good " +
+        "over evil. These celebrations strengthen relationships and teach kindness, patience, and harmony.",
+
+        180: "Each year, board exams bring a common scenario to India: teenagers " +
+        "engrossed in textbooks, parents worried about scores, and schools prolonging classes. " +
+        "This period, meant to mark a learning achievement, frequently becomes a stressful time " +
+        "for students, families, and educators. Parents express concern about admission cut-offs " +
+        "and often make comparisons. Families invest heavily in coaching and adjust their routines."
+    };
+
+    var totalTime = 120;
+    var timeLeft = totalTime;
+    var timer = null;
+    var started = false;
+
+    var input = document.getElementById("userInput");
+    var timeEl = document.getElementById("time");
+    var testTextEl = document.getElementById("testText");
+
+    testTextEl.innerText = passages[120];
+
+    var radios = document.querySelectorAll('input[name="time"]');
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener("change", function () {
+            if (!started) {
+                totalTime = parseInt(this.value);
+                timeLeft = totalTime;
+                timeEl.innerText = totalTime;
+                testTextEl.innerText = passages[totalTime];
+            }
+        });
+    }
+
+    input.addEventListener("input", function () {
+        if (!started) {
+            started = true;
+            timer = setInterval(updateTimer, 1000);
+        }
+    });
+
+    function updateTimer() {
+        timeLeft--;
+        timeEl.innerText = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            submitTest();
+        }
+    }
+
+    function submitTest() {
+        clearInterval(timer);
+        input.disabled = true;
+
+        var typedWords = input.value.trim().split(/\s+/);
+        var originalWords = testTextEl.innerText.split(" ");
+
+        var correct = 0;
+        var errors = 0;
+
+        for (var i = 0; i < originalWords.length; i++) {
+            if (typedWords[i] === originalWords[i]) {
+                correct++;
+            } else if (typedWords[i]) {
+                errors++;
+            }
+        }
+
+        var accuracy = Math.round((correct / originalWords.length) * 100);
+        var wpm = Math.round((typedWords.length / totalTime) * 60);
+
+        document.getElementById("wpm").innerText = isFinite(wpm) ? wpm : 0;
+        document.getElementById("accuracy").innerText = accuracy;
+        document.getElementById("errors").innerText = errors;
+        document.getElementById("timeUsed").innerText = totalTime - timeLeft;
+
+        document.getElementById("resultBox").style.display = "block";
+    }
+
+    function resetTest() {
+        clearInterval(timer);
+        started = false;
+        input.disabled = false;
+        input.value = "";
+        document.getElementById("resultBox").style.display = "none";
+
+        var selectedTime = document.querySelector('input[name="time"]:checked').value;
+        totalTime = parseInt(selectedTime);
+        timeLeft = totalTime;
+        timeEl.innerText = totalTime;
+        testTextEl.innerText = passages[totalTime];
+    }
+</script>
+
+</body>
+</html>
