@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BridgeBack</title>
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+
+<header class="header">
+
+    <!-- CART -->
+    <div class="cart-wrapper">
+        <div class="cart-icon">
+            👜
+            <span class="count">0</span>
+        </div>
+
+        <!-- CART POPUP (THIS WAS MISSING) -->
+        <div class="cart-popup">
+            <p class="empty">NO PRODUCTS IN THE CART.</p>
+            <hr>
+            <div class="cart-footer">
+                <span>Cart</span>
+                <span class="total">TOTAL: £0.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo">BridgeBack</div>
+
+    <!-- HAMBURGER -->
+    <div class="menu" id="menuBtn">
+        <span></span>
+        <span></span>
+    </div>
+
+</header>
+
+<!-- FULLSCREEN MENU -->
+<div class="overlay" id="overlay">
+
+    <!-- X MARK -->
+    <div class="close-btn" id="closeBtn">✕</div>
+
+    <div class="menu-page">
+        <a href="../index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./shop.html" class="active">SHOP</a>
+        <a href="../html/blog.html">BLOG</a>
+    </div>
+
+</div>
+
+
+<script src="../js/header.js"></script>
+
+<section class="product-grid">
+
+  <div class="product-box">
+    <img src="../images/shop-6.jpg" alt="Turquoise Backpack">
+    <div class="product-info">
+      <h4>TURQUOISE GREEN</h4>
+      <span class="price" data-price="£50.00">£50.00</span>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <img src="../images/shop-5.jpg" alt="Grey Backpack">
+    <div class="product-info">
+      <h4>LIGHT GREY</h4>
+      <span class="price" data-price="£50.00">£50.00</span>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <img src="../images/shop-4.jpg" alt="Navy Backpack">
+    <div class="product-info">
+      <h4>NAVY BLUE</h4>
+      <span class="price" data-price="£50.00">£50.00</span>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="product-grid">
+
+  <div class="product-box">
+    <img src="../images/shop-3.jpg" alt="Turquoise Backpack">
+    <div class="product-info">
+      <h4>Simply Black</h4>
+      <span class="price" data-price="£50.00">£50.00</span>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <img src="../images/shop-2.jpg" alt="Grey Backpack">
+    <div class="product-info">
+      <h4>Deep Beige</h4>
+      <span class="price" data-price="£50.00">£50.00</span>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <img src="../images/shop-1.jpg" alt="Navy Backpack">
+    <div class="product-info">
+      <h4>Dark Grey</h4>
+      <span class="price" data-price="£50.00">£50.00</span>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="accessories">
+    <div class="accessories-title">
+        <h2>ACCESSORIES</h2>
+    </div>
+
+    <!-- GRID ROW 1 -->
+    <div class="accessories-grid">
+
+        <div class="accessory-item">
+            <img src="../images/shop-12a.jpg" alt="School Backpack">
+            <div class="product-info">
+                <h4>SCHOOL BACKPACK</h4>
+                <span class="price" data-price="£44.00">£44.00</span>
+            </div>
+        </div>
+
+        <div class="accessory-item">
+            <img src="../images/shop-11a.jpg" alt="Big Grey">
+            <div class="product-info">
+                <h4>BIG GREY</h4>
+                <span class="price" data-price="£100.00">£100.00</span>
+            </div>
+        </div>
+
+        <div class="accessory-item">
+            <img src="../images/shop-10a.jpg " alt="Lady Purse">
+            <div class="product-info">
+                <h4>LADY PURSE</h4>
+                <span class="price" data-price="£80.00">£80.00</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- GRID ROW 2 -->
+    <div class="accessories-grid">
+
+        <div class="accessory-item">
+            <img src="../images/shop-9a.jpg" alt="School Backpack">
+            <div class="product-info">
+                <h4>Cotton Backpack</h4>
+                <span class="price" data-price="£44.00">£44.00</span>
+            </div>
+        </div>
+
+        <div class="accessory-item">
+            <img src="../images/shop-8a.jpg" alt="Big Grey">
+            <div class="product-info">
+                <h4>Sleeping Bag</h4>
+                <span class="price" data-price="£30.00">£30.00</span>
+            </div>
+        </div>
+
+        <div class="accessory-item">
+            <img src="../images/shop-7-2.jpg" alt="Lady Purse">
+            <div class="product-info">
+                <h4>Hip Bag</h4>
+                <span class="price" data-price="£80.00">£80.00</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- External JS -->
+<script src="../js/shop.js"></script>
+
+
+<!-- Scroll to top arrow -->
+    <button id="scrollTopBtn" class="scroll-top-btn">&uarr;</button>
+
+    <!-- JS must be here -->
+    <script src="../js/topscroll.js"></script>
+
+
+</body>
+
+<footer class="site-footer">
+  <div class="footer-col newsletter-col">
+    <div class="col-top">
+      <h4 class="footer-title">NEWSLETTER</h4>
+      <div class="input-group">
+        <input type="email" placeholder="Get Newsletter...">
+        <button class="arrow-btn">→</button>
+      </div>
+    </div>
+    <div class="col-bottom contact-info">
+      <p><a href="mailto:bridge@example.com">bridge@example.com</a></p>
+      <p><a href="tel:+36895 55 88 548">+36895 55 88 548</a></p>
+    </div>
+  </div>
+
+  <div class="footer-col nav-col">
+    <ul class="footer-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Manufacturers</a></li>
+      <li><a href="#">All products</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Journal</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col nav-col">
+    <ul class="footer-links">
+      <li><a href="https://www.facebook.com/QodeInteractive/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.pinterest.com/qodeinteractive/_created/" target="_blank">Pinterest</a></li>
+      <li><a href="https://www.instagram.com/qodeinteractive/" target="_blank">Instagram</a></li>
+      <li><a href="https://bridge428.qodeinteractive.com/#" target="_blank">Vimeo</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col branding-col">
+    <div class="product-teaser">
+      <img src="https://bridge428.qodeinteractive.com/wp-content/uploads/2021/04/footer-image.jpg" alt="Backpack" class="footer-product-img">
+    </div>
+    <div class="col-bottom copyright-row">
+      <span>Copyright @ Qode Interactive 2021</span>
+    </div>
+  </div>
+</footer>
+
+</html>
