@@ -75,7 +75,22 @@
         <h4><a href="mailto:BRIDGE@EXAMPLE.COM" target="_blank">BRIDGE@EXAMPLE.COM</a></h4>
 
         
-        <p><a href="https://www.google.rs/maps/search/160th+Ave,+42+street,+London,+UK/@51.5287718,-0.2416802,11z/data=!3m1!4b1?hl=en" target="_blank">160th Ave, 42 street, London, UK</a></p>
+        <p  onclick="openMap()"><a href="">108/43 Vijaya Lakshmi Enclave, Hyderabad Telangana 500050</a></p>
+
+        <script>
+        function openMap() {
+          // Address in JS format
+          const address = "108/43 Vijaya Lakshmi Enclave 1st Floor H No 2 PJR Enclave Rd Gangaram ICRISAT Colony Hyderabad Telangana 500050";
+
+          // Convert address to Google Maps URL
+          const mapURL =
+            "https://www.google.com/maps/search/?api=1&query=" +
+            encodeURIComponent(address);
+
+          // Redirect to Google Maps
+          window.open(mapURL, "_blank"); // opens in new tab
+        }
+      </script>
         
 
         <p><a href="tel:+386 556 66 56">+386 556 66 56</a></p>

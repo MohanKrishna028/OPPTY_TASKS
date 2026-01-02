@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.joke-part {
+    width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: popIn 0.8s ease;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.joke-content {
+    margin: 20px 0;
+    animation: fadeSlide 0.6s ease;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#setup {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#punchline {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+.hide {
+    display: none;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background: #fff;
+    color: #764ba2;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #764ba2;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+.loader {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
