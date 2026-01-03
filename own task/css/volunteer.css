@@ -9,7 +9,6 @@ body {
     padding: 0;
 }
 
-/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
@@ -36,7 +35,6 @@ body {
     color: #c62828;
 }
 
-/* NAV BUTTONS */
 .nav-btn {
     padding: 8px 14px;
     border: none;
