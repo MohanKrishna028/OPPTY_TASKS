@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+    background: #fff1f1;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c62828;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #1976d2;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #a01212;
+}
+
+/* TITLE */
+.page-title {
+    text-align: center;
+    font-size: 42px;
+    color: #b30000;
+    margin: 30px 0 60px;
+}
+
+/* TEAM GRID */
+.team-container {
+    display: flex;
+    gap: 40px;
+    padding: 0 60px 80px;
+}
+
+/* CARD */
+.team-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.15);
+    width: auto;
+}
+
+/* IMAGE */
+.team-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #c00000;
+    margin-bottom: 20px;
+}
+
+/* ROLE */
+.team-card h3 {
+    color: #c00000;
+    font-size: 18px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+/* NAME */
+.team-card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* BLOOD */
+.blood {
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.team-card a{
+    color: red;
+    text-decoration: none;
+    font-size: medium;
+    line-height: 30px;
+    font-weight: bold;
+
+}
+
+.team-card a:hover{
+    color: navy;
+}
+
+

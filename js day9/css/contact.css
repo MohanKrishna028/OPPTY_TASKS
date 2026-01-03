@@ -254,6 +254,26 @@ html {
     color: #8a8a8a;
 }
 
+.contact-middle button{
+  background-color:navy;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font: size 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-middle button:hover{
+  background-color: gray; 
+  transform: scale(1.05);
+
+}
+
 /* RIGHT MAP */
 .contact-right iframe{
     width:100%;

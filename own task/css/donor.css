@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff1f1;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c62828;
+}
+
+
+.nav-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #1976d2;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #a01212;
+}
+
+
+.page-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #444;
+    margin-bottom: 30px;
+}
+
+
+.form-card {
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
+    width: 380px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+label {
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8f0000;
+}
+
+
+.certificate-section {
+    display: none; 
+    margin-top: 50px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-section h2 {
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.certificate-section p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+.form-link {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #1976d2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-link:hover {
+    background: #125aa0;
+}

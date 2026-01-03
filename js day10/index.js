@@ -4,7 +4,7 @@ const loader = document.getElementById("loader");
 const jokeContent = document.getElementById("jokeContent");
 
 async function getJoke() {
-    // Show loader, hide joke
+    
     loader.style.display = "block";
     jokeContent.classList.add("hide");
 
@@ -12,7 +12,7 @@ async function getJoke() {
         const response = await fetch("https://official-joke-api.appspot.com/random_joke");
         const data = await response.json();
 
-        // Small delay for better animation feel
+        
         setTimeout(() => {
             setupEl.innerText = data.setup;
             punchlineEl.innerText = data.punchline;
