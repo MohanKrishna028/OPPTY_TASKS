@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Web Project</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Interactive Web Project</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Dynamic</a>
+            <a href="#">Timer</a>
+            <a href="#">Contact Form</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>About This Project</h2>
+
+            <div class="grid">
+                <div>
+                    <p>
+                        This is a sample interactive web page built using HTML and JavaScript.
+                        It features dynamic content manipulation, form validation, and local storage.
+                    </p>
+
+                    <strong>Features Demonstrated:</strong>
+                    <ul>
+                        <li>DOM manipulation</li>
+                        <li>Form validation</li>
+                        <li>Event handling</li>
+                        <li>Dynamic updates</li>
+                        <li>Local storage</li>
+                    </ul>
+                </div>
+
+                <!-- MAP SECTION -->
+                <div>
+                    <div class="map-image" id="mapImg1">
+                        <iframe src="https://www.google.com/maps?q=London&output=embed" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <button class="toggle" onclick="toggleMap('mapImg1')">Toggle Map</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid">
+
+            <!-- TODO LIST -->
+            <div class="todo">
+                <h2>Interactive To-Do List</h2>
+
+                <input id="taskInput" placeholder="New Task...">
+                <button onclick="addTask()">Add</button>
+
+                <ul id="taskList"></ul>
+
+                <div class="note">Tasks are saved in your browser's local storage.</div>
+                <button class="secondary" onclick="clearTasks()">Clear All Tasks</button>
+            </div>
+
+            <!-- TIMER -->
+            <div class="timer-box">
+                <h2>Auto-Updating Timer</h2>
+                <p>This counter auto-updates every second:</p>
+
+                <div class="timer" id="timer">Time elapsed: 00:00:00</div>
+
+                <button onclick="pauseTimer()">Pause Timer</button>
+                <button onclick="resetTimer()">Reset Timer</button>
+            </div>
+
+        </section>
+
+        <section class="grid">
+
+            <!-- SECOND TIMER -->
+            <div class="timer-box">
+                <h2>Auto-Updating Timer</h2>
+                <p>This counter auto-updates every second:</p>
+
+                <div class="timer" id="timer">Time elapsed: 00:00:00</div>
+
+                <button onclick="pauseTimer()">Pause Timer</button>
+                <button onclick="resetTimer()">Reset Timer</button>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div>
+                <h2>Contact Form</h2>
+
+                <form onsubmit="return validateForm()">
+                    <label>Name:</label>
+                    <input id="name">
+                    <div class="error" id="nameErr"></div>
+
+                    <label>Email:</label>
+                    <input id="email">
+                    <div class="error" id="emailErr"></div>
+
+                    <label>Password:</label>
+                    <input type="password" id="password">
+                    <div class="error" id="passErr"></div>
+
+                    <label>Message:</label>
+                    <textarea></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <p class="success" id="successMsg"></p>
+            </div>
+
+        </section>
+
+        <section class="map2">
+            <h2>Feat Sessions & Videos</h2>
+
+            <div class="map-image" id="mapImg2">
+                <img src="./maps_dmpu.1248.webp" alt="Map Location" onclick="openMap()">
+            </div>
+
+            <button class="toggle2" onclick="toggleMap('mapImg2')">Toggle Map</button>
+        </section>
+
+
+
+        <footer>
+            <p>© 2024 <strong>Interactive Web Project</strong></p>
+        </footer>
+
+        <script src="./index.js"></script>
+</body>
+
+</html>
