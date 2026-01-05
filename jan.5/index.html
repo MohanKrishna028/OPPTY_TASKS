@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header Design</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="/jan.5/images/salesforce-with-type-logo.svg" alt="Logo">
+            </div>
+
+
+            <nav class="nav-menu">
+                <a href="#">Products</a>
+                <a href="#">Industries</a>
+                <a href="#">Customers</a>
+                <a href="#">More <i class="fa-solid fa-chevron-down"></i></a>
+            </nav>
+
+            <!-- SEARCH -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Ask Agentforce a...">
+            </div>
+
+            <!-- RIGHT ACTIONS -->
+            <div class="header-actions">
+                <a href="#" class="call-link">Call Us<br><span>1800-420-7332</span></a>
+                <i class="fa-solid fa-globe icon"></i>
+                <a href="#" class="login"><i class="fa-regular fa-user"></i> Login</a>
+                <a href="#" class="contact-btn">Contact us</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="promo-hero">
+        <div class="promo-container">
+
+            <div class="promo-left">
+                <!-- ICON IMAGE -->
+                <img src="/jan.5/images/starter-suite-nb-logo.webp" alt="Promo Icons" class="promo-icon-img">
+
+                <p>
+                    Limited time offer for Indian SMBs –
+                    <strong>40% off Sales Cloud, Marketing Cloud & Service Cloud.</strong>
+                </p>
+            </div>
+
+            <div class="promo-right">
+                <span class="promo-arrow">➜</span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <p class="top-label">Salesforce. The #1 AI CRM.</p>
+
+        <h1>
+            Humans and agents drive <br>
+            <span>customer success together.</span>
+        </h1>
+
+        <p class="hero-desc">
+            Agentforce transforms Sales, Service, Commerce, Marketing, IT, and more by uniting apps,
+            data, and agents on one trusted platform. Now every department is an engine for growth.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="btn primary">Explore Agentforce</button>
+            <button class="btn outline">Calculate your ROI</button>
+        </div>
+    </section>
+    
+    <!-- SLIDER -->
+    <section class="slider-section">
+
+    <!-- SLIDER WRAPPER -->
+    <div class="slider-wrapper">
+
+        <!-- SLIDER TRACK -->
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- CARD 1 -->
+            <div class="slider-card">
+                <img src="./images/slide image 1.jpeg" alt="">
+                <div class="card-info">
+                    <h4>Stephanie Paetow</h4>
+                    <p>Volkswagen</p>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="slider-card">
+                <img src="./images/slide image 2.jpeg" alt="">
+                <div class="card-info">
+                    <h4>Peter Dorr</h4>
+                    <p>Marketing Director</p>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="slider-card">
+                <img src="./images/slide image 3.jpeg" alt="">
+                <div class="card-info">
+                    <h4>Mark Calumbo</h4>
+                    <p>Enterprise Strategy</p>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="slider-card">
+                <img src="./images/slide image 4.jpeg" alt="">
+                <div class="card-info">
+                    <h4>Innovation Leader</h4>
+                    <p>Global Enterprise</p>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="slider-card">
+                <img src="./images/slide image 5.jpeg" alt="">
+                <div class="card-info">
+                    <h4>Innovation Leader</h4>
+                    <p>Global Enterprise</p>
+                </div>
+            </div>
+
+        </div> <!-- /slider-track -->
+
+    </div> <!-- /slider-wrapper -->
+
+    <!-- SLIDER CONTROLS (BELOW SLIDER) -->
+    <div class="slider-controls">
+        <button onclick="slide(-1)">&#60;</button>
+        <button id="playPauseBtn" onclick="togglePlay()">⏸</button>
+        <button onclick="slide(1)">&#62;</button>
+    </div>
+
+</section>
+
+    
+
+
+
+
+
+    <section class="crm-section">
+        <div class="crm-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="crm-content">
+                <h2>
+                    Grow fast with our <br>
+                    <span>free CRM.</span>
+                </h2>
+
+                <p>
+                    See value from day one with
+                    <a href="#">our free, all-in-one CRM built for small businesses</a>.
+                    Stop juggling spreadsheets and disconnected apps. Bring customer activity,
+                    pipeline, marketing campaigns, and service cases into one place.
+                    Start getting more done day-to-day and get full visibility into your business. Free.
+                </p>
+
+                <div class="crm-links">
+                    <a href="#" class="bold-link">Get it for free.</a>
+                    <a href="#">See full pricing</a>
+                </div>
+
+                <div class="crm-buttons">
+                    <button class="btn primary">Start for free</button>
+                    <button class="btn outline">Start demo</button>
+                </div>
+            </div>
+
+            <!-- RIGHT VIDEO -->
+            <div class="crm-video" id="videoBox">
+                <iframe id="youtubeVideo" src="https://www.youtube.com/watch?v=7y6OihK_ZBk"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+
+                <!-- COVER -->
+                <div class="video-overlay" id="videoOverlay">
+                    <div class="play-btn">▶</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="agentforce-section">
+        <div class="agentforce-container">
+
+            <!-- LEFT VIDEO -->
+            <div class="agentforce-video">
+                <iframe id="agentforceIframe" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?enablejsapi=1&rel=0"
+                    allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+
+                <div class="video-overlay" id="agentforceOverlay">
+                    <div class="play-icon">▶</div>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="agentforce-content">
+                <h2>2.5M+ conversations handled by Agentforce and counting.</h2>
+
+                <p>
+                    Everyone talks the AI talk. We’re walking the walk.
+                    With 66% autonomous case resolution, 15% more marketing pipeline,
+                    and 1.8x higher lead conversion, Agentforce is the real deal.
+                    See how we did it – and how you can, too.
+                </p>
+
+                <div class="agentforce-buttons">
+                    <a href="#" class="btn primary">
+                        See our stories <span>↗</span>
+                    </a>
+
+                    <a href="#" class="btn outline">
+                        Experience Salesforce Help <span>↗</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="platform-section">
+        <div class="platform-container">
+
+            <h2>
+                Salesforce is the platform<br>
+                for the Agentic Enterprise.
+            </h2>
+
+            <p>
+                Our deeply unified platform brings together apps, data, agents,
+                and metadata to drive customer and employee success.
+                With trust and governance built in, Salesforce ensures your AI
+                and business scale securely, reliably, and with confidence.
+            </p>
+
+            <a href="#" class="platform-btn">See all products</a>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="agentforce-visual-section">
+        <img src="./images/Agentforce360-251111version.webp" alt="Agentforce 360 Platform Diagram" />
+    </section>
+
+
+
+
+    <section class="agentforce-industry-section">
+        <h2>
+            Launch faster with 16+ Agentforce solutions, built <br>
+            for your industry.
+        </h2>
+
+        <p>
+            Designed with industry expertise, these out-of-the-box solutions align with
+            your workflows, data, and customer needs, so you can modernize faster, go to
+            market sooner, and deliver value from day one.
+        </p>
+    </section>
+
+
+
+
+
+    <section class="industry-cards-section">
+        <div class="industry-grid">
+
+            <!-- CARD 1 -->
+            <div class="industry-card">
+                <h3>Financial Services</h3>
+                <p>
+                    Connect with customers proactively to deliver AI-powered,
+                    high-value experiences.
+                </p>
+                <a href="#">Explore Financial Services</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-fin-services.svg" alt="Financial Services">
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="industry-card">
+                <h3>Retail</h3>
+                <p>
+                    Acquire profitable customers faster with unified,
+                    real-time data.
+                </p>
+                <a href="#">Explore Retail</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-retail.svg" alt="Retail">
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="industry-card">
+                <h3>Consumer Goods</h3>
+                <p>
+                    Transform your business with consumer goods technology
+                    made for your industry.
+                </p>
+                <a href="#">Explore Consumer Goods</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-consumer-goods.svg" alt="Consumer Goods">
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="industry-card">
+                <h3>Healthcare</h3>
+                <p>
+                    Deliver connected, patient-first experiences across the
+                    entire care journey.
+                </p>
+                <a href="#">Explore Healthcare</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-manufacturing.svg" alt="Healthcare">
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="industry-card">
+                <h3>Life Sciences</h3>
+                <p>
+                    Accelerate innovation and improve outcomes with
+                    data-driven insights.
+                </p>
+                <a href="#">Explore Life Sciences</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-manufacturing (1).svg" alt="Life Sciences">
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="industry-card">
+                <h3>Manufacturing</h3>
+                <p>
+                    Build resilient operations and connected customer
+                    experiences.
+                </p>
+                <a href="#">Explore Manufacturing</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-healthcare.svg  " alt="Manufacturing">
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="industry-card">
+                <h3>Communications</h3>
+                <p>
+                    Power personalized engagement across every customer
+                    interaction.
+                </p>
+                <a href="#">Explore Communications</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-education.svg" alt="Communications">
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="industry-card">
+                <h3>Public Sector</h3>
+                <p>
+                    Deliver trusted, digital-first services for citizens
+                    and agencies.
+                </p>
+                <a href="#">Explore Public Sector</a>
+
+                <div class="card-icon">
+                    <img src="./images/icon-ind-media.svg" alt="Public Sector">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="industries-btn-wrapper">
+            <a href="#" class="industries-btn">See all Industries</a>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="salesforce-section">
+        <div class="content">
+            <h2>
+                Over <span>150,000</span> companies, both big and small,
+                are growing their business with Salesforce.
+            </h2>
+
+            <a href="#" class="btn">
+                See all stories
+                <span class="icon">↗</span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="brand-section">
+
+        <!-- Row 1 -->
+        <div class="brand-container row-1">
+            <div class="brand-card"><img src="./images/in-hp-min-logo-balaji.webp" alt=""></div>
+            <div class="brand-card"><img src="./images/in-hp-min-logo-flame.webp" alt=""></div>
+            <div class="brand-card"><img src="./images/in-hp-min-logo-flame.webp" alt=""></div>
+            <div class="brand-card"><img src="./images/in-hp-min-logo-godrejboyce.webp" alt=""></div>
+            <div class="brand-card"><img src="./images/in-hp-min-logo-mahindra.webp" alt=""></div>
+            <div class="brand-card"><img src="./images/in-hp-min-logo-pepe.webp" alt=""></div>
+        </div>
+
+        <!-- Row 2 (CENTERED) -->
+        <div class="brand-container row-2">
+            <div class="brand-card"><img src="./images/in-hp-min-logo-razorpay.webp" alt=""></div>
+            <div class="brand-card"><img src="./images/in-hp-min-logo-secutech.webp" alt=""></div>
+        </div>
+
+
+        <div class="brand-heading">
+            <h2>
+                See why analysts agree Salesforce should be
+                <br>
+                your Agentic AI partner.
+            </h2>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="report-section">
+
+        <!-- MAIN REPORT CARD -->
+        <div class="report-card main-report">
+
+            <div class="report-left">
+                <img src="./images/n-up-valoir-v2.webp" alt="Valoir Report">
+            </div>
+
+            <div class="report-right">
+                <span class="tag">Report</span>
+
+                <h2>
+                    Agentforce delivers ROI faster and at a lower
+                    cost than a DIY approach.
+                </h2>
+
+                <a href="#" class="report-btn">Read the Valoir report</a>
+            </div>
+
+        </div>
+
+        <!-- SMALL REPORT CARDS -->
+        <div class="report-grid">
+
+            <div class="small-report-card">
+                <span class="tag">Report</span>
+                <h3>
+                    Salesforce is voted the #1 Global Software
+                    Company on G2.
+                </h3>
+                <a href="#">Read the report</a>
+            </div>
+
+            <div class="small-report-card">
+                <span class="tag">Report</span>
+                <h3>
+                    Futurum report explains why Agentforce is the
+                    fastest path to enterprise value.
+                </h3>
+                <a href="#">Read the report</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+<section class="agentblazer-section">
+  <div class="container">
+    <h1>Become an Agentblazer.</h1>
+    <p class="subtitle">
+      Learn essential AI and Agentforce skills required to shape the future of work for free.
+    </p>
+
+    <button class="main-btn">Explore all Agentforce learning</button>
+
+    <div class="cards">
+      <!-- Champion -->
+      <div class="card">
+        <div class="badge">
+          <img src="./images/n-up-af-level-1-v2.webp" alt="Champion Coin">
+        </div>
+        <span class="level">Level 1</span>
+        <h3>Champion</h3>
+        <p>
+          Confidently explain Agentforce concepts and business impact.
+        </p>
+        <a class="start" href="#">Start learning</a>
+      </div>
+
+      <!-- Innovator -->
+      <div class="card">
+        <div class="badge">
+          <img src="./images/n-up-af-level-2-v2.webp" alt="Innovator Coin">
+        </div>
+        <span class="level">Level 2</span>
+        <h3>Innovator</h3>
+        <p>
+          Implement Agentforce solutions to drive measurable business outcomes.
+        </p>
+        <a class="start" href="#">Start learning</a>
+      </div>
+
+      <!-- Legend -->
+      <div class="card">
+        <div class="badge">
+          <img src="./images/n-up-af-level-3_7a5f8f.webp" alt="Legend Coin">
+        </div>
+        <span class="level">Level 3</span>
+        <h3>Legend</h3>
+        <p>
+          Understand advanced concepts and design complex strategies.
+        </p>
+        <a class="start" href="#">Start learning</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <section class="values-section">
+        <div class="values-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="values-content">
+                <h2>
+                    We believe that business is
+                    the greatest platform for
+                    change.
+                </h2>
+
+                <p>
+                    Grounded in trust, customer success, innovation, equality,
+                    and sustainability, we’re committed to doing well in business
+                    and doing good in the world – investing 1% of our equity,
+                    technology, and time to create lasting change. We’re also a
+                    founder and champion of Pledge 1%, a global movement to
+                    ensure giving back is part of companies of all sizes.
+                </p>
+
+                <div class="values-buttons">
+                    <a href="#" class="btn primary">See what drives us</a>
+                    <a href="#" class="btn outline">Take the pledge</a>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="values-image">
+                <img src="./images/1-up-values.webp" alt="Salesforce Core Values">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="latest-section">
+        <h2 class="latest-title">Get the latest from Salesforce.</h2>
+
+        <div class="latest-grid">
+
+            <!-- Card 1 -->
+            <div class="latest-card">
+                <div class="image-wrapper">
+                    <img src="./images/n-up-flex-DF.webp" alt="Dreamforce">
+                </div>
+                <div class="card-content">
+                    <h3>Catch all the Dreamforce 2025 highlights.</h3>
+                    <a href="#">Stream it now</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="latest-card">
+                <div class="image-wrapper">
+                    <img src="./images/Salesforce-Introduces-New-Flexible-Pricing_-Built-to-Scale-Across-Evolving-Use-Cases-and-AI-Strategies.webp"
+                        alt="Salesforce India">
+                </div>
+                <div class="card-content">
+                    <h3>
+                        Salesforce India Continues to Record Strong Growth,
+                        Bets Big on Agentic Enterprise Transformation
+                    </h3>
+                    <a href="#">Know more</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="latest-card">
+                <div class="image-wrapper">
+                    <img src="./images/n-up-flex-partners.webp" alt="AppExchange">
+                </div>
+                <div class="card-content">
+                    <h3>
+                        Get the most out of Salesforce with partners,
+                        apps, and agents.
+                    </h3>
+                    <a href="#">Discover AppExchange</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="cta-section">
+        <h2>Get started today.</h2>
+
+        <p>
+            There's nothing to install. No credit card required.<br />
+            Free for 30 days.
+        </p>
+
+        <a href="#" class="cta-btn">Try for free</a>
+    </section>
+
+
+
+
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <details class="faq-item">
+            <summary>
+                What is Salesforce?
+                <span class="icon">+</span>
+            </summary>
+            <p>
+                Salesforce is a cloud-based CRM platform that helps businesses manage
+                customer relationships, sales, marketing, and support.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                What is CRM and why do I need one?
+                <span class="icon">+</span>
+            </summary>
+            <p>
+                CRM helps businesses organize customer data, track interactions,
+                and improve relationships to grow sales.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                What is agentic AI and how is it used in Salesforce?
+                <span class="icon">+</span>
+            </summary>
+            <p>
+                Agentic AI automates tasks, makes decisions, and improves productivity
+                using intelligent workflows.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                How does Salesforce CRM help my small business grow?
+                <span class="icon">+</span>
+            </summary>
+            <p>
+                It centralizes customer data, improves efficiency, and helps teams
+                close deals faster.
+            </p>
+        </details>
+
+    </section>
+
+
+
+
+
+
+    <section class="sf-links-section">
+        <div class="sf-container">
+
+            <!-- Left -->
+            <div class="sf-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" alt="Salesforce"
+                    class="sf-logo" />
+
+                <div class="sf-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <p class="sf-call">Call us at <strong>1800-420-7332</strong></p>
+            </div>
+
+            <!-- Right -->
+            <div class="sf-columns">
+
+                <div class="sf-col">
+                    <h4>New to Salesforce?</h4>
+                    <a href="#">Why Salesforce</a>
+                    <a href="#">What is CRM?</a>
+                    <a href="#">Explore All Products</a>
+                    <a href="#">SaaS</a>
+                    <a href="#">Customer Success</a>
+                    <a href="#">Product Pricing</a>
+                </div>
+
+                <div class="sf-col">
+                    <h4>About Salesforce</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Blog <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Security and Performance <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Salesforce.org <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Best CRM Software</a>
+                    <a href="#">Sustainability <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Legal <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Give us your Feedback</a>
+                </div>
+
+                <div class="sf-col">
+                    <h4>Popular Links</h4>
+                    <a href="#">New Release Features <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Salesforce Mobile App</a>
+                    <a href="#">Business App Store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Dreamforce <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">CRM Software</a>
+                    <a href="#">Salesforce Plus <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#">Salesforce for startups <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<script src="./slide.js"></script>
+</body>
+
+
+
+<footer class="sf-footer">
+    <div class="sf-footer-top">
+
+        <!-- Left -->
+        <div class="sf-region">
+            <i class="fa-solid fa-globe"></i>
+            <span>Worldwide</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <!-- Right Links -->
+        <nav class="sf-footer-links">
+            <a href="#">Legal</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy</a>
+            <a href="#">Responsible Disclosure</a>
+            <a href="#">Trust</a>
+            <a href="#">Contact</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#" class="privacy-choice">
+                <span class="toggle">✓✕</span>
+                Your Privacy Choices
+            </a>
+        </nav>
+    </div>
+
+    <!-- Bottom -->
+    <div class="sf-footer-bottom">
+        © Copyright 2025 Salesforce, Inc. All rights reserved. Various trademarks held by their respective owners.
+    </div>
+</footer>
+
+</html>
