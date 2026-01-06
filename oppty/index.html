@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Oppty</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="logo1">
+                <img src="./images/oppty.png" alt="Oppty Logo">
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="./index.html">Home</a>
+                <a href="./html/about.html">About Us</a>
+                <a href="./html/services.html">Our Services</a>
+                <a href="./html/contact.html">Contact Us</a>
+                <a href="./html/career.html">Careers</a>
+            </nav>
+
+            <!-- Right Section -->
+            <div class="header-right">
+                <a href="#" class="btn">Academy</a>
+                <a href="#" class="btn">Training Partner</a>
+                <a href="#" class="btn">Hiring Partner</a>
+
+                <div class="phone">
+                    📞 <span>+91 9491209900</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+    <section class="hero-section">
+
+
+        <div class="hero-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="hero-left">
+                <div class="hero-slider">
+
+                    <div class="hero-slide active">
+                        <h1>INNOVATIVE SOLUTIONS<br>UNLEASHED</h1>
+                        <p class="tags">
+                            ADVANCED IT <span>•</span> TAILORED STRATEGIES <span>•</span> SCALABLE GROWTH
+                        </p>
+                    </div>
+
+                    <div class="hero-slide">
+                        <h1>ELEVATE YOUR<br>DIGITAL FUTURE</h1>
+                        <p class="tags">
+                            WEB DEVELOPMENT <span>•</span> AI SOLUTIONS <span>•</span> CLOUD SECURITY
+                        </p>
+                    </div>
+
+                    <div class="hero-slide">
+                        <h1>POWERING BUSINESS<br>SUCCESS</h1>
+                        <p class="tags">
+                            IT SERVICES <span>•</span> BPO SOLUTIONS <span>•</span> E-COMMERCE
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- DOTS -->
+                <div class="hero-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="hero-right">
+                <img src="./images/slider-3-image.png" alt="Hero Image">
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const slides = document.querySelectorAll(".hero-slide");
+        const dots = document.querySelectorAll(".dot");
+
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            dots.forEach(dot => dot.classList.remove("active"));
+
+            slides[index].classList.add("active");
+            dots[index].classList.add("active");
+        }
+
+        function autoPlay() {
+            current++;
+            if (current >= slides.length) current = 0;
+            showSlide(current);
+        }
+
+        setInterval(autoPlay, 4000);
+
+        /* DOT CLICK */
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                current = index;
+                showSlide(current);
+            });
+        });
+    </script>
+
+
+
+
+
+    <section class="ignite">
+        <!-- Heading -->
+        <h2 class="ignite-title">
+            IGNITE YOUR BUSINESS<br>
+            WITH OPPTY TECHHUB
+        </h2>
+
+        <div class="ignite-main">
+
+            <!-- LEFT IMAGE -->
+            <div class="ignite-left">
+                <img src="./images/Hai-Home3-filler-1-img.jpg" alt="Team Working">
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="ignite-right">
+
+                <!-- Top Row (Text + Image) -->
+                <div class="ignite-top">
+                    <div class="ignite-text">
+                        <p>
+                            Power up your success with innovative IT, BPO, E-commerce,
+                            Web Development, and AI solutions tailored to your vision.
+                            Partner with us to transform challenges into opportunities
+                            and drive growth with cutting-edge technology.
+                        </p><br><br>
+                        <a href="./html/about.html" class="Know">Know More</a>
+                    </div>
+
+
+
+                    <div class="ignite-image">
+                        <img src="./images/Hai-Home3-filler-fixed-img.png" alt="Illustration">
+                    </div>
+                </div>
+
+                <!-- Bottom Counts -->
+                <div class="ignite-counts">
+                    <div class="count-box">
+                        <h3>2K</h3>
+                        <span>Projects Complete</span>
+                    </div>
+                    <div class="count-box">
+                        <h3>200+</h3>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="count-box">
+                        <h3>10+</h3>
+                        <span>Awards Achieve</span>
+                    </div>
+                    <div class="count-box">
+                        <h3>5+</h3>
+                        <span>Global Branches</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="steps-section">
+
+        <div class="steps-overlay"></div>
+
+        <h2 class="steps-title">
+            FIVE STEPS TO <span>TRANSFORM</span><br>
+            YOUR BUSINESS WITH OPPTY TECHHUB
+        </h2>
+
+        <div class="steps-row">
+
+            <div class="step">
+                <div class="icon"><img src="./images/step1.jpeg"></div>
+                <div class="connect">
+                    <span class="dot"></span>
+                    <span class="track"></span>
+                    <span class="arrow"></span>
+                </div>
+                <h3>1. Discover Your Needs</h3>
+                <p>Analyze your business goals with our experts to identify tailored IT and AI solutions for maximum
+                    impact.</p>
+            </div>
+
+            <div class="step">
+                <div class="icon"><img src="./images/step2.jpeg"></div>
+                <div class="connect">
+                    <span class="dot"></span>
+                    <span class="track"></span>
+                    <span class="arrow"></span>
+                </div>
+                <h3>2. Strategize & Plan</h3>
+                <p>Craft a customized roadmap using cutting-edge technology to drive efficiency and growth.</p>
+            </div>
+
+            <div class="step">
+                <div class="icon"><img src="./images/step3.jpeg"></div>
+                <div class="connect">
+                    <span class="dot"></span>
+                    <span class="track"></span>
+                    <span class="arrow"></span>
+                </div>
+                <h3>3. Implement Solutions</h3>
+                <p>Deploy secure IT, BPO, e-commerce, or web development services with seamless integration.</p>
+            </div>
+
+            <div class="step">
+                <div class="icon"><img src="./images/step4.jpeg"></div>
+                <div class="connect">
+                    <span class="dot"></span>
+                    <span class="track"></span>
+                    <span class="arrow"></span>
+                </div>
+                <h3>4. Optimize Performance</h3>
+                <p>Leverage AI-driven insights and AIOps to enhance operations and reduce downtime.</p>
+            </div>
+
+        </div>
+
+        <a href="#" class="steps-btn">Follow Us On LinkedIn</a>
+    </section>
+    
+
+
+
+
+
+    <section class="services-section">
+        <div class="services-wrapper">
+
+            <!-- LEFT SIDE -->
+            <div class="services-left">
+                <span class="tag">Services</span>
+                <h2>SOLUTION WE <span>PROVIDES</span></h2>
+
+                <img src="./images/service-bg-h3.png" alt="Service Image">
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="services-right">
+                <p class="desc">
+                    Unlock your business potential with our innovative,
+                    SEO-optimized solutions designed for success.
+                </p>
+
+                <div class="service-item">
+                    <span>IT SERVICES</span>
+                    <strong>01</strong>
+                </div>
+
+                <div class="service-item">
+                    <span>BPO</span>
+                    <strong>02</strong>
+                </div>
+
+                <div class="service-item">
+                    <span>E-COMMERCE</span>
+                    <strong>03</strong>
+                </div>
+
+                <div class="service-item">
+                    <span>WEB DEVELOPMENT</span>
+                    <strong>04</strong>
+                </div>
+
+                <div class="service-item">
+                    <span>AI SOLUTIONS</span>
+                    <strong>05</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="text-slider">
+        <div class="slider-track">
+            <div class="slide-text">
+                WEB DEVELOPMENT • AI SOLUTIONS • IT SERVICES • BPO • E-COMMERCE •
+            </div>
+            <div class="slide-text">
+                WEB DEVELOPMENT • AI SOLUTIONS • IT SERVICES • BPO • E-COMMERCE •
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="testimonials">
+        <h2>OUR CLIENTS <span>REVIEWS</span></h2>
+
+        <div class="slider">
+            <div class="slider-track">
+
+                <!-- SLIDE 1 -->
+                <div class="slide">
+                    <div class="card">
+                        <h4>Anjali Sharma</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Oppty’s e-commerce platform increased our online sales by 45% in just three months!</p>
+                        <span class="quote">“</span>
+                    </div>
+
+                    <div class="card">
+                        <h4>Rohan Patel, Tech Entrepreneur</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Their AI-driven solutions optimized our workflows, saving us significant costs.</p>
+                        <span class="quote">“</span>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="slide">
+                    <div class="card">
+                        <h4>Priyanka Reddy, Marketing Head</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>The responsive website Oppty built for us perfectly captures our brand’s essence.</p>
+                        <span class="quote">“</span>
+                    </div>
+
+                    <div class="card">
+                        <h4>Vikram Singh, Founder</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Professional team with excellent delivery and communication.</p>
+                        <span class="quote">“</span>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div class="slide">
+                    <div class="card">
+                        <h4>Sneha Verma</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Outstanding support and scalable solutions for growing businesses.</p>
+                        <span class="quote">“</span>
+                    </div>
+
+                    <div class="card">
+                        <h4>Amit Kulkarni</h4>
+                        <div class="stars">★★★★★</div>
+                        <p>Reliable delivery with a deep understanding of modern IT needs.</p>
+                        <span class="quote">“</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+        <!-- DOTS -->
+        <div class="dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+
+        <div class="below-slider">
+            <p class="partner-text">
+                We are proud to partner with industry leaders.
+            </p>
+
+            <h2 class="valued-title">
+                OUR VALUED <span>CLIENTS</span>
+            </h2>
+    </section>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const track = document.querySelector(".slider-track");
+            const dots = document.querySelectorAll(".dot");
+
+            if (!track || dots.length === 0) {
+                console.error("Slider elements not found");
+                return;
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+
+                    track.style.transform = `translateX(-${index * 100}%)`;
+
+                    dots.forEach(d => d.classList.remove("active"));
+                    dot.classList.add("active");
+
+                });
+            });
+
+        });
+
+
+    </script>
+
+
+
+
+
+
+    <section class="logo-section">
+        <div class="logo-slider">
+            <div class="logo-track">
+
+                <!-- LOGOS (repeat twice for seamless scroll) -->
+                <div class="logo"><img src="./images/o1-150x150.png" alt="G4S"></div>
+                <div class="logo"><img src="./images/o2-150x150.png" alt="Apollo"></div>
+                <div class="logo"><img src="./images/o3-150x150.png" alt="ITC Infotech"></div>
+                <div class="logo"><img src="./images/o4-150x150.png" alt="IBM"></div>
+                <div class="logo"><img src="./images/o5-150x150.png" alt="Foundit"></div>
+                <div class="logo"><img src="./images/o6.png" alt="AU Bank"></div>
+                <div class="logo"><img src="./images/o7-150x150.png" alt="Hetero"></div>
+                <div class="logo"><img src="./images/o8-150x150.png" alt="Hetero"></div>
+
+                <!-- DUPLICATE -->
+                <div class="logo"><img src="./images/o1-150x150.png" alt="G4S"></div>
+                <div class="logo"><img src="./images/o2-150x150.png" alt="Apollo"></div>
+                <div class="logo"><img src="./images/o3-150x150.png" alt="ITC Infotech"></div>
+                <div class="logo"><img src="./images/o4-150x150.png" alt="IBM"></div>
+                <div class="logo"><img src="./images/o5-150x150.png" alt="Foundit"></div>
+                <div class="logo"><img src="./images/o6.png" alt="AU Bank"></div>
+                <div class="logo"><img src="./images/o7-150x150.png" alt="Hetero"></div>
+                <div class="logo"><img src="./images/o8-150x150.png" alt="Hetero"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-col brand">
+            <img src="images/oppty-logo.png" alt="Oppty Logo" class="footer-logo">
+            <p>
+                Power up your success with innovative IT, BPO, E-commerce,
+                Web Development, and AI solutions tailored to your vision.
+            </p>
+        </div>
+
+        <!-- HYDERABAD -->
+        <div class="footer-col">
+            <h4>HYDERABAD LOCATIONS</h4>
+            <p>
+                Hyderabad - Flat number 601,<br>
+                Mahitha's green galaxy, CBCID Colony,<br>
+                NRSA Colony, Bagath Singh Nagar Phase 2,<br>
+                Kukatpally, Hyderabad,<br>
+                Telangana 500085
+            </p>
+        </div>
+
+        <!-- UDAIPUR -->
+        <div class="footer-col">
+            <h4>UDAIPUR LOCATIONS</h4>
+            <p>
+                Udaipur - Plot No: 26, 100 Feet Rd,<br>
+                Shobhagpura, Udaipur,<br>
+                Rajasthan 313011
+            </p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+            <h4>CONTACT US</h4>
+            <p>info@oppty.in</p>
+            <p>+91-9491209900</p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-col">
+            <h4>QUICK LINKS</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="footer-divider"></div>
+
+    <!-- LOGO BOX (NO SLIDER) -->
+    <div class="footer-logo-box">
+        <div class="footer-logos">
+
+            <div class="footer-logo-item">
+                <img src="./images/png-clipart-government-of-india-ministry-of-micro-small-and-medium-enterprises-small-business-india-text-logo__1_-removebg-preview.png"
+                    alt="MSME">
+            </div>
+
+            <div class="footer-logo-item">
+                <img src="./images/Ministry-for-Corporate-AffairS-1-removebg-preview.png"
+                    alt="Ministry of Corporate Affairs">
+            </div>
+
+            <div class="footer-logo-item">
+                <img src="./images/36662669-1685562943668-bf31f5769c66e.jpg" alt="Startup India">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        ©2025 Oppty. All Rights Reserved.
+    </div>
+</footer>
+
+
+
+
+
+</html>
