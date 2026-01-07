@@ -36,7 +36,8 @@ body {
 /* NAVIGATION */
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 7px;
+  margin-left: 150px;
 }
 
 .nav a {
@@ -137,102 +138,120 @@ body {
 
 
 /* SOLUTION */
-.solution-section {
-  background: #1b1b1b;
+.services-overview {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0f0f0f, #1b1b1b);
   color: #fff;
-  padding: 100px 8%;
 }
 
-.solution-container {
+.services-container {
+  width: 85%;
+  margin: auto;
+}
+
+/* HEADER */
+.services-header {
   display: flex;
-  gap: 80px;
-  position: relative;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
-/* LEFT */
-.small-label {
-  font-size: 16px;
-  margin-bottom: 25px;
-  display: block;
+.section-label {
+  font-size: 14px;
+  color: #999;
 }
 
-.main-heading {
-  font-size: 56px;
-  font-weight: 800;
-  margin-bottom: 80px;
+.services-header h2 {
+  font-size: 42px;
 }
 
-.main-heading span {
+.services-header h2 span {
   color: #ff7a00;
 }
 
-.service-tag {
-  font-size: 20px;
-  font-weight: 700;
+.header-text {
+  max-width: 420px;
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+/* LIST */
+.services-list {
+  border-top: 1px solid #333;
+}
+
+/* ROW */
+.service-row {
+  display: grid;
+  grid-template-columns: 220px 1fr 80px;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 0;
+  border-bottom: 1px solid #333;
   cursor: pointer;
 }
 
-/* RIGHT */
-.solution-right {
+/* TITLE */
+.service-title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* DESC */
+.service-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #bdbdbd;
+  transition: color 0.3s ease;
+}
+
+/* ACTION */
+.service-action {
   position: relative;
-  flex: 1.2;
-}
-
-.top-text {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.line {
-  width: 4px;
+  width: 60px;
   height: 60px;
-  background: #ffcc00;
-  margin-right: 25px;
 }
 
-.top-text p {
-  font-size: 22px;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 1.9;
-  max-width: 700px;
-}
-
-/* ARROW */
-.arrow-btn {
+.service-no,
+.service-arrow {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ffcc00, #ff7a00);
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  color: #111;
-  transition: all 0.4s ease;
-}
-
-/* NUMBER */
-.count {
-  position: absolute;
-  right: 10px;
-  top: 55%;
-  font-size: 48px;
   font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.service-no {
+  font-size: 34px;
   color: #fff;
-  opacity: 0.8;
 }
 
-/* 🔥 HOVER EFFECT (THIS IS WHAT YOU WANT) */
-.service-hover:hover .arrow-btn {
-  transform: translateX(10px) rotate(45deg);
-  box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+.service-arrow {
+  font-size: 28px;
+  background: #ff7a00;
+  color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+/* HOVER EFFECT */
+.service-row:hover .service-title {
+  color: #ff7a00;
+}
+
+.service-row:hover .service-no {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.service-row:hover .service-arrow {
+  opacity: 1;
+  transform: scale(1);
 }
 
 
@@ -240,6 +259,217 @@ body {
 
 
 
+/* REVIEW */
+.review-section {
+  padding: 120px 0;
+  background: linear-gradient(
+    180deg,
+    #eef7fb 0%,
+    #fdf1e9 100%
+  );
+}
+
+/* CONTAINER */
+.review-container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+/* LABEL */
+.review-label {
+  color: #ff7a00;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.review-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1f2430;
+  margin-bottom: 40px;
+}
+
+/* STARS */
+.review-stars {
+  color: #ff7a00;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+/* TEXT */
+.review-text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1f2430;
+  max-width: 850px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+/* DIVIDER */
+.review-divider {
+  width: 100%;
+  height: 1px;
+  background: #ff7a00;
+  opacity: 0.4;
+  margin-bottom: 35px;
+}
+
+/* FOOTER */
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* AUTHOR */
+.review-author h4 {
+  font-size: 20px;
+  color: #1f2430;
+  margin-bottom: 6px;
+}
+
+.review-author span {
+  font-size: 16px;
+  color: #ff7a00;
+}
+
+/* QUOTE ICON */
+.review-quote {
+  font-size: 90px;
+  color: #000000;
+  opacity: 0.9;
+  line-height: 1;
+}
+
+.review-footer:hover .review-quote {
+  color: #ff7a00;
+}
+
+
+
+
+
+
+/* SCROLLING */
+.scroll-strip {
+  background: #ffffff;
+  padding: 35px 0;
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.scroll-track {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.scroll-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  animation: scroll-left 20s linear infinite;
+}
+
+.scroll-content span {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.scroll-content .dot {
+  font-size: 30px;
+  margin-top: -5px;
+}
+
+/* ANIMATION */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+/* IMAGES */
+.insta-gallery {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.insta-overlay a{
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  border: white 1px solid;
+  border-radius: 50px;
+  padding: 20px;
+  background-color:#ff7a00 ;
+}
+
+/* OVERLAY */
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 123, 0, 0.049);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* SLICE EFFECT */
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+/* ICON */
+.insta-icon {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Font Awesome 6 Brands";
+}
+
+/* HOVER EFFECTS */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .insta-overlay {
+  transform: translateX(0);
+}
 
 
 

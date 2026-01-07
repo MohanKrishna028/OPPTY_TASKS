@@ -36,7 +36,8 @@ body {
 /* NAVIGATION */
 .nav {
   display: flex;
-  gap: 25px;
+  gap: 7px;
+  margin-left: 150px;
 }
 
 .nav a {
